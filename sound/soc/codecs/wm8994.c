@@ -213,8 +213,8 @@ static int wm8994_write(struct snd_soc_codec *codec, unsigned int reg,
 	return wm8994_reg_write(codec->control_data, reg, value);
 }
 
-static unsigned int wm8994_read(struct snd_soc_codec *codec,
-				unsigned int reg)
+static unsigned int wm8994_read(struct snd_soc_codec *codec, unsigned int reg
+	unsigned int value)
 {
 	unsigned int val;
 	int ret;
