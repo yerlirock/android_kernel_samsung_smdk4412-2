@@ -96,7 +96,7 @@ struct touchkey_i2c *tkey_i2c_local;
 struct timer_list touch_led_timer;
 int touch_led_timeout = 3; // timeout for the touchkey backlight in secs
 int touch_led_disabled = 0; // 1= force disable the touchkey backlight
-int touch_led_on_screen_touch = TOUCHKEY_LED_ENABLED; // Yank555.lu : Light up h/w key on touchscreen touch by default
+int touch_led_on_screen_touch = TOUCHKEY_LED_DISABLED; // Yank555.lu : Disable light up h/w key on touchscreen touch by default
 
 #if defined(TK_HAS_AUTOCAL)
 static u16 raw_data0;
